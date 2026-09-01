@@ -1,0 +1,33 @@
+/* 1. CONFIGURACIÓN BASE */
+html, body {
+    margin: 0px;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+}
+
+/* 2. MAQUETACIÓN */
+header { width: 100%; height: 33%; background-color: #a0c4e4; }
+.contenedor-c { width: 100%; height: 33%; }
+nav { width: 20%; height: 100%; float: left; background-color: #6a9bd8; }
+main { width: 80%; height: 100%; float: left; background-color: #e6ebf5; }
+.corte { clear: both; }
+footer { width: 100%; height: 33%; background-color: #8bb1df; }
+
+/* 3. MENÚ DESPLEGABLE */
+#menu ul { list-style: none; padding: 0; margin: 0; }
+#menu ul li {
+    background-color: #2e518b;
+    position: relative;
+    float: left;
+    width: 120px;
+    text-align: center;
+}
+#menu ul a { display: block; text-decoration: none; color: white; padding: 10px; }
+
+#menu ul ul { display: none; position: absolute; top: 100%; left: 0; }
+#menu ul ul li { float: none; width: 120px; }
+#menu ul ul a { padding: 10px; background-color: #1e3a63; }
+
+#menu ul li:hover ul { display: block; }

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 4 - Variables Simples</title>
+</head>
+<body>
+    <h2>Ejercicio 4: Variables Simples</h2>
+    
+    <!-- DIV de resultados con estilo básico sugerido en el video -->
+    <div id="resultado" style="background-color: #e0e0e0; padding: 20px; margin-bottom: 15px; min-height: 50px; font-family: monospace;">
+        Esperando acción...
+    </div>
+
+    <!-- Botones de acción -->
+    <button onclick="declararZ()">Variable Z (var)</button>
+    <button onclick="declararQ()">Variable Q (let)</button>
+    <button onclick="sumarAB()">Sumar A (Num) + B (String)</button>
+    <button onclick="sumarAC()">Sumar A (Num) + C (Num)</button>
+
+    <script>
+        function declararZ() {
+            var z = 10;
+            document.getElementById('resultado').innerHTML = "Valor de Z: " + z + "<br>Tipo de Z: " + typeof(z);
+        }
+
+        function declararQ() {
+            let q = "Hola";
+            document.getElementById('resultado').innerHTML = "Valor de Q: " + q + "<br>Tipo de Q: " + typeof(q);
+        }
+
+        function sumarAB() {
+            var a = 1;
+            var b = "1"; // string
+            var suma1 = a + b;
+            document.getElementById('resultado').innerHTML = "A = 1 (número), B = '1' (string)<br>Valor de Suma 1: " + suma1 + "<br>Tipo: " + typeof(suma1);
+        }
+
+        function sumarAC() {
+            var a = 1;
+            var c = 2; // número
+            var suma2 = a + c;
+            document.getElementById('resultado').innerHTML = "A = 1 (número), C = 2 (número)<br>Valor de Suma 2: " + suma2 + "<br>Tipo: " + typeof(suma2);
+        }
+    </script>
+</body>
+</html>
